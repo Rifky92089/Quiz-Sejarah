@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelajari Sejarah Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Pelajari Sejarah Indonesia</h1>
+        <p>Tingkatkan pengetahuanmu tentang sejarah Indonesia melalui game-game menarik</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23ff9999'/><text x='50' y='60' text-anchor='middle' fill='white' font-size='40'>?</text></svg>" alt="Quiz Icon">
+            <h2>Quiz Sejarah Indonesia</h2>
+            <p>Jawab pertanyaan seputar sejarah Indonesia dari masa ke masa. Tunjukkan pengetahuanmu!</p>
+            <button class="btn-main" onclick="startQuiz()">Main</button>
+        </div>
+    </div>
+
+    <div id="quiz-container">
+        <div class="quiz-header">
+            <div class="score-container">
+                Skor: <span id="score">0</span>
+            </div>
+            <div class="timer-container">
+                Waktu: <span id="timer">30</span>
+            </div>
+        </div>
+        <div id="question-container">
+            <h2 id="question-text"></h2>
+            <div id="options-container" class="options"></div>
+        </div>
+        <div id="result" class="result"></div>
+        <button class="btn-main next-btn" onclick="nextQuestion()">Selanjutnya</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
